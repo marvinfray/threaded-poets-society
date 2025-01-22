@@ -1,6 +1,7 @@
 # Catch My Ear
 
-![image](https://github.com/user-attachments/assets/5506bf0c-38d6-4598-b753-ee89e9e66283)
+![image](https://github.com/user-attachments/assets/54f38a2f-5e9e-4d21-ac72-24e8639caf0b)
+
 
 
 Every now and again  
