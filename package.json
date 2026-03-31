@@ -1,0 +1,12 @@
+{
+  "name": "threaded-poets-society",
+  "version": "1.0.0",
+  "description": "A poetry portfolio site built with Eleventy",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -1,0 +1,423 @@
+/* ============================================================
+   Threaded Poets Society — stylesheet
+   Design: quiet, spacious, typographically considered.
+   Every decision serves the poems.
+   ============================================================ */
+
+/* --- Custom properties --------------------------------------- */
+:root {
+  --bg:          #0f0f14;
+  --text:        #f0ece4;
+  --text-muted:  #8a8278;
+  --accent:      #c9a96e;
+  --border:      #2a2a30;
+  --font-poem:   'EB Garamond', Georgia, serif;
+  --font-ui:     'DM Sans', system-ui, sans-serif;
+  --column:      680px;
+  --gutter:      1.5rem;
+}
+
+/* --- Reset --------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Base ---------------------------------------------------- */
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-weight: 300;
+  line-height: 1.6;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+/* --- Layout shell -------------------------------------------- */
+.site-header,
+.main-content,
+.site-footer {
+  width: 100%;
+  max-width: var(--column);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.main-content {
+  flex: 1;
+  padding-block: 4rem 6rem;
+}
+
+/* --- Site header / nav --------------------------------------- */
+.site-header {
+  padding-block: 2rem;
+}
+
+.site-nav {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.nav-home {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.nav-home:hover {
+  color: var(--accent);
+}
+
+.nav-link {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+/* --- Site footer --------------------------------------------- */
+.site-footer {
+  padding-block: 2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--border);
+  text-transform: uppercase;
+  border-top: 1px solid var(--border);
+}
+
+/* --- Home page ----------------------------------------------- */
+.home-header {
+  margin-bottom: 5rem;
+}
+
+.site-title {
+  font-family: var(--font-ui);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.site-epigraph {
+  font-family: var(--font-poem);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* --- Poem list ----------------------------------------------- */
+.poem-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.poem-list-item {
+  border-top: 1px solid var(--border);
+}
+
+.poem-list-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.poem-list-link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 1.5rem;
+  row-gap: 0.3rem;
+  padding-block: 1.5rem;
+  transition: opacity 0.15s ease;
+}
+
+.poem-list-link:hover {
+  color: inherit;
+  opacity: 0.8;
+}
+
+.poem-list-link:hover .poem-list-title {
+  color: var(--accent);
+}
+
+.poem-list-title {
+  font-family: var(--font-poem);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text);
+  grid-column: 1;
+  grid-row: 1;
+  transition: color 0.15s ease;
+}
+
+.poem-list-date {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.poem-list-note {
+  font-family: var(--font-poem);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  grid-column: 1 / -1;
+  grid-row: 2;
+  line-height: 1.5;
+}
+
+/* --- Individual poem page ------------------------------------ */
+.poem {
+  max-width: 100%;
+}
+
+.poem-header {
+  margin-bottom: 3.5rem;
+}
+
+.poem-title {
+  font-family: var(--font-poem);
+  font-weight: 400;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.poem-date {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.poem-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.poem-tag {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+}
+
+/* --- Poem body ----------------------------------------------- */
+.poem-body {
+  font-family: var(--font-poem);
+  font-size: 1.15rem;
+  line-height: 1.85;
+  color: var(--text);
+}
+
+/* Stanza spacing — blank lines between <p> tags */
+.poem-body p {
+  margin-bottom: 2rem;
+}
+
+.poem-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Inline emphasis */
+.poem-body em {
+  font-style: italic;
+}
+
+.poem-body strong {
+  font-weight: 500;
+}
+
+/* Links in poem body (e.g. embedded music references) */
+.poem-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.15s ease;
+}
+
+.poem-body a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* Section headings within poems (roman numerals etc.) */
+.poem-body h3,
+.poem-body h4 {
+  font-family: var(--font-poem);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Horizontal rules within poem body */
+.poem-body hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-block: 2.5rem;
+}
+
+/* Images embedded in poems */
+.poem-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-block: 2rem;
+  opacity: 0.85;
+}
+
+/* --- Poem footer (commit note) ------------------------------- */
+.poem-footer {
+  margin-top: 4rem;
+}
+
+.poem-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.poem-commit-note {
+  font-family: var(--font-poem);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* --- Back navigation ----------------------------------------- */
+.poem-nav {
+  margin-top: 3.5rem;
+}
+
+.poem-back {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+}
+
+.poem-back:hover {
+  color: var(--text);
+}
+
+/* --- About page ---------------------------------------------- */
+.about {
+  max-width: 100%;
+}
+
+.about h1 {
+  font-family: var(--font-poem);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  color: var(--text);
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+
+.about p {
+  font-family: var(--font-poem);
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Mobile-first responsive --------------------------------- */
+@media (max-width: 640px) {
+  :root {
+    --gutter: 1.25rem;
+  }
+
+  html {
+    font-size: 17px;
+  }
+
+  .poem-list-link {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .poem-list-date {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 0.15rem;
+  }
+
+  .poem-list-note {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 0.3rem;
+  }
+
+  .site-nav {
+    gap: 1.25rem;
+  }
+
+  .main-content {
+    padding-block: 2.5rem 4rem;
+  }
+
+  .home-header {
+    margin-bottom: 3rem;
+  }
+
+  .poem-header {
+    margin-bottom: 2.5rem;
+  }
+}

@@ -1,0 +1,23 @@
+---
+layout: layouts/base
+---
+<div class="home">
+  <div class="home-header">
+    <h1 class="site-title">{{ site.name }}</h1>
+    <p class="site-epigraph">{{ site.epigraph }}</p>
+  </div>
+
+  <ol class="poem-list" reversed>
+    {% for poem in collections.poems %}
+    <li class="poem-list-item">
+      <a href="{{ poem.url }}" class="poem-list-link">
+        <span class="poem-list-title">{{ poem.data.title }}</span>
+        <span class="poem-list-date">{{ poem.date | formatDate }}</span>
+        {% if poem.data.commit_note %}
+        <span class="poem-list-note">{{ poem.data.commit_note }}</span>
+        {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ol>
+</div>
