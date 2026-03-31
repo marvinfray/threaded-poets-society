@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/threaded-poets-society/",
     dir: {
       input: ".",
       output: "_site",
