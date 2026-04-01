@@ -21,11 +21,14 @@ layout: layouts/base
   {% if commit_message or footnote %}
   <footer class="poem-footer">
     <hr class="poem-rule" />
-    {% if commit_message %}
-    <div class="poem-commit-message">{{ commit_message | markdownify | safe }}</div>
-    {% endif %}
     {% if footnote %}
     <p class="poem-footnote">{{ footnote }}</p>
+    {% endif %}
+    {% if commit_message %}
+    <details class="poem-commit-details">
+      <summary class="poem-commit-summary">Origin note</summary>
+      <div class="poem-commit-message">{{ commit_message | markdownify | safe }}</div>
+    </details>
     {% endif %}
   </footer>
   {% endif %}
