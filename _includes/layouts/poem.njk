@@ -4,7 +4,7 @@ layout: layouts/base
 <article class="poem">
   <header class="poem-header">
     <h1 class="poem-title">{{ title }}</h1>
-    <p class="poem-date">{{ date | formatDate }}</p>
+    <p class="poem-date">{{ display_date if display_date else date | formatDate }}</p>
     {% if tags and tags | length %}
     <ul class="poem-tags">
       {% for tag in tags %}

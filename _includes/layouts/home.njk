@@ -12,7 +12,7 @@ layout: layouts/base
     <li class="poem-list-item">
       <a href="{{ poem.url | url }}" class="poem-list-link">
         <span class="poem-list-title">{{ poem.data.title }}</span>
-        <span class="poem-list-date">{{ poem.date | formatDate }}</span>
+        <span class="poem-list-date">{{ poem.data.display_date if poem.data.display_date else poem.date | formatDate }}</span>
         {% if poem.data.commit_note %}
         <span class="poem-list-note">{{ poem.data.commit_note }}</span>
         {% endif %}
