@@ -13,8 +13,8 @@ layout: layouts/base
       <a href="{{ poem.url | url }}" class="poem-list-link">
         <span class="poem-list-title">{{ poem.data.title }}</span>
         <span class="poem-list-date">{{ poem.data.display_date if poem.data.display_date else poem.date | formatDate }}</span>
-        {% if poem.data.commit_note %}
-        <span class="poem-list-note">{{ poem.data.commit_note }}</span>
+        {% if poem.data.footnote %}
+        <span class="poem-list-note">{{ poem.data.footnote }}</span>
         {% endif %}
       </a>
     </li>

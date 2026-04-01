@@ -2,7 +2,11 @@
 title: To Lie
 date: 2026-03-31
 tags: [love, death, family]
-commit_note: "a wish that death might feel like falling asleep beside the one you love; that all who came before, grew alongside, and will carry you forward might gather in that same stillness"
+commit_message: |
+  Written from a wish that death might feel like falling asleep beside my love — Abi; not an ending, but the fullest rest.
+
+  Abi is the still point; the lover whose presence becomes the image of a good death. But the wish expands outward: to ancestors who shaped me, those who walked beside me, and those who will carry me forward. Death not as loss but as reunion — lying together inside the full span of love.
+footnote: "a wish that death might feel like falling asleep beside the one you love; that all who came before, grew alongside, and will carry you forward might gather in that same stillness"
 ---
 
 There is a death I do not fear —

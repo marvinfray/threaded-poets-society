@@ -2,7 +2,20 @@
 title: The Church That Forgot Its Name
 date: 2026-03-14
 tags: [light, memory, ruin]
-commit_note: "thirty-two movements through a ruined church; what light does when it passes through old glass into older stone — what is held, what is translated, and what the crack in the north window reveals only by moonlight"
+draft: true
+commit_message: |
+  This poem grew from a place that is very important in my life: Cwm-yr-Eglwys, a small valley on the Pembrokeshire coast whose name means "the valley of the church." At its centre stand the stone remains of a chapel, roofless now, open to the sky and the sea.
+
+  I first visited there shortly after my mother died. She had suffered a fatal stroke on the day of my sister's wedding — after witnessing the church ceremony but before the celebration that was meant to follow. In the days that followed, my family gathered together in Cwm-yr-Eglwys: my father, my sisters, my wife and our children, my closest friend and his family, and my wife's mother. It was a time marked deeply by grief, yet something about that place — the openness of the valley, the presence and personality of the sea, the worn stone of the ruined church — held us.
+
+  Looking back, I was surprised at how the memory carries an unexpected tenderness. In the midst of loss, the time and space we shared together was beautiful. Since then, we have returned to Cwm again and again. My brother-in-law's family has a place along that same stretch of coast, and the valley has become part of the rhythm of our lives.
+
+  The image of that roofless church also echoes another place closer to home: the remains of St Thomas's Church ruins, whose surviving walls now hold the Southsea Rose Garden. There too, the roof is gone and the sky has taken its place. The walls remain, but the space within them has changed — quiet, open, alive in a different way.
+
+  During meditation one day, the image of these places returned to me. I found myself thinking about the endurance of stone walls, the rising and setting of the sun and moon, and the quiet passage of time through spaces left open to the sky. It began to feel as though we ourselves are something like windows — life passing through us for a while. As we live, we become stained with experience, marked by love and loss, sometimes cracked by time and grief.
+
+  Yet those marks are not what diminish us. They are what give us colour. They are what allow light to pass through us in ways that are uniquely our own. The imperfections, the fractures, the stories we carry — these are what make the light beautiful.
+footnote: "thirty-two movements through a ruined church; what light does when it passes through old glass into older stone — what is held, what is translated, and what the crack in the north window reveals only by moonlight"
 ---
 
 ---

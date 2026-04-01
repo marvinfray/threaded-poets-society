@@ -315,7 +315,7 @@ a:hover {
   opacity: 0.85;
 }
 
-/* --- Poem footer (commit note) ------------------------------- */
+/* --- Poem footer (commit message + footnote) ----------------- */
 .poem-footer {
   margin-top: 4rem;
 }
@@ -326,12 +326,32 @@ a:hover {
   margin-bottom: 2rem;
 }
 
-.poem-commit-note {
+.poem-commit-message {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+}
+
+.poem-commit-message p {
+  margin-bottom: 1rem;
+}
+
+.poem-commit-message p:last-child {
+  margin-bottom: 0;
+}
+
+.poem-footnote {
   font-family: var(--font-poem);
   font-style: italic;
   font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
+  border-top: 1px solid var(--border);
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 /* --- Back navigation ----------------------------------------- */

@@ -2,7 +2,11 @@
 title: I Hear the World Singing
 date: 2024-12-20
 tags: [unity, identity, song]
-commit_note: "listening for the chorus beneath the fracture; the song was never separate, only scattered — and in the darkness, we find we have been singing together all along"
+commit_message: |
+  This poem reimagines Walt Whitman's "I Hear America Singing" for a global context, reflecting on the interconnected yet fractured nature of our world. It explores the challenges of identity and imagined separations in a hyper-connected age, contrasting them with the unifying celebrations found in shared spaces of community and creativity.
+
+  Crafted with the thoughtful guidance of ChatGPT, this piece reflects the collaborative potential of blending human expression with AI support.
+footnote: "listening for the chorus beneath the fracture; the song was never separate, only scattered — and in the darkness, we find we have been singing together all along"
 ---
 
 I hear the world singing,

@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("poems", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob("poems/*.md")
+      .filter((item) => !item.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 
@@ -27,6 +28,11 @@ module.exports = function (eleventyConfig) {
   // Year filter — for footer
   eleventyConfig.addFilter("year", function (date) {
     return new Date(date).getFullYear();
+  });
+
+  // Markdownify filter — renders a frontmatter string as markdown HTML
+  eleventyConfig.addFilter("markdownify", function (content) {
+    return md.render(content || "");
   });
 
   return {

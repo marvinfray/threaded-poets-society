@@ -2,6 +2,12 @@
 title: "Soul Of My Soul (4 Lissy)"
 date: 2021-01-17
 tags: [grief, loss, love, memory]
+commit_message: |
+  Written for Lissy on the passing of her Grandad during COVID. She was in Australia; we were in Portchester — watching the funeral together on camera, wearing waistcoats in his honour.
+
+  The poem speaks to grief as a shared physical weight, and to the belief that love and pain connect us across any distance. Sent as a photograph alongside Lord Huron's 'Ends of the Earth'.
+
+  'Soul of My Soul' — a phrase that defines the friendship itself.
 ---
 
 How quickly the sun drops from the sky  

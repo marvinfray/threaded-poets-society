@@ -2,7 +2,8 @@
 title: Under the Same Blanket of Stars
 date: 2026-01-19
 tags: [love, distance, music]
-commit_note: "a playlist strung between latitudes; a love that holds across distance by staying tuned to the same frequency — the thought of you still breathing somewhere, still laughing"
+commit_message: "Written as an ode to Abi, built around a playlist we made for the space between us when she travelled. The poem reaches beyond physical distance toward every kind of separation — the world away, the years away, the gone away — and finds the same sky above all of it."
+footnote: "a playlist strung between latitudes; a love that holds across distance by staying tuned to the same frequency — the thought of you still breathing somewhere, still laughing"
 ---
 
 [You know you have to go](https://open.spotify.com/track/62ZDZ7CMf0j1lEmTvRknGu?si=7663aad3f9fc4f03) —
