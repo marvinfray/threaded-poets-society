@@ -30,6 +30,11 @@ module.exports = function (eleventyConfig) {
     return new Date(date).getFullYear();
   });
 
+  // Markdownify filter — renders a frontmatter string as markdown HTML
+  eleventyConfig.addFilter("markdownify", function (content) {
+    return md.render(content || "");
+  });
+
   return {
     pathPrefix: "/threaded-poets-society/",
     dir: {

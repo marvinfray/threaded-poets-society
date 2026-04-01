@@ -2,7 +2,11 @@
 title: "Feeding the Root, Bearing the Fruit"
 date: 2024-12-20
 tags: [nature, cycle, interconnection]
-commit_note: "a meditation on the invisible sustenance that connects us — to those who came before, to those who will come after, to the breath we borrow and the futures we exhale"
+commit_message: |
+  This poem reflects on the cycles of life and death, growth and sustenance, inspired by themes of breath and the interconnected ecosystems of nature. It invites contemplation on what sustains us and what we, in turn, sustain — rooted in the unseen networks that bind us to the earth and to one another.
+
+  Crafted with the thoughtful collaboration of ChatGPT, this poem marks another step in exploring sustainability through the lens of poetry.
+footnote: "a meditation on the invisible sustenance that connects us — to those who came before, to those who will come after, to the breath we borrow and the futures we exhale"
 ---
 
 What sustains the breath we take?

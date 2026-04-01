@@ -18,10 +18,15 @@ layout: layouts/base
     {{ content | safe }}
   </div>
 
-  {% if commit_note %}
+  {% if commit_message or footnote %}
   <footer class="poem-footer">
     <hr class="poem-rule" />
-    <p class="poem-commit-note">{{ commit_note }}</p>
+    {% if commit_message %}
+    <div class="poem-commit-message">{{ commit_message | markdownify | safe }}</div>
+    {% endif %}
+    {% if footnote %}
+    <p class="poem-footnote">{{ footnote }}</p>
+    {% endif %}
   </footer>
   {% endif %}
 

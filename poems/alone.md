@@ -2,7 +2,8 @@
 title: Alone
 date: 2025-01-11
 tags: [loss, solitude, sea]
-commit_note: "the slow withdrawal of closeness; a tide that takes without intention, leaving the shore clutching at nothing"
+commit_message: "This is one that I wrote and would like to evolve. Coincidentally, I came across this in my Apple notes after having worked collaboratively on a poem that, at one point was entitled Alone, but evolved in to \"All One\"."
+footnote: "the slow withdrawal of closeness; a tide that takes without intention, leaving the shore clutching at nothing"
 ---
 
 Clasping at your attention

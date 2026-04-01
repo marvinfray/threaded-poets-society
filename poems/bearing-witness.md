@@ -2,6 +2,14 @@
 title: Bearing Witness
 date: 2026-04-01
 tags: [fatherhood, love, grief, witness]
+commit_message: |
+  On the shift from being responsible for to responsible to — the fragmented memory of early parenthood, the cartography of a child's safe world, and a conversation with Jorge I don't want to forget: it becomes more bearing witness than stepping in.
+
+  The cartography image draws on a career spent building maps for command and control systems, and on Johnny Harris — whose work is a constant reminder that maps are never neutral. A parent's map of what is safe is the most personal map ever drawn.
+
+  Shaped also by Alison Gopnik's The Gardener and the Carpenter — the idea that we are not building our children to a design, but tending the conditions for something we cannot fully predict or own.
+
+  First in a planned sequence.
 ---
 
 I remember fragments of the nights.

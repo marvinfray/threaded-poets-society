@@ -2,7 +2,17 @@
 title: The Same Moon
 date: 2026-03-05
 tags: [tide, distance, time]
-commit_note: "the tide does not bargain; the shore must learn the rhythm it is given — what is uncovered is not failure, only what was always there, waiting for the right light"
+commit_message: |
+  This poem emerged from personal reflection on fatherhood, friction, and the desire to be more present.
+
+  The emotional root was a moment of noticing: that when discomfort rises, the instinct is either to rush through it or resist it, and that both impulses come from the same place. That awareness became the foundation.
+
+  From there the reflection expanded to acknowledge a truth that no parent meets every need, and no child receives a complete version of their parent. Love is distributed unevenly across time. That is not failure — it is timing.
+
+  Then came another metaphor — from wondering about how much a vein in a leaf or the path of a river follows rules or patterns, versus the unique beauty born of taking its own course. Tides hold connection and distance, exposure and return, cosmic influence and human powerlessness, pattern and variation — all at once.
+
+  We are shaped by the same forces, but never in the same way.
+footnote: "the tide does not bargain; the shore must learn the rhythm it is given — what is uncovered is not failure, only what was always there, waiting for the right light"
 ---
 
 At low tide the shore reveals its thinking —

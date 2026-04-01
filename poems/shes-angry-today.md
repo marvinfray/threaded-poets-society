@@ -2,7 +2,15 @@
 title: "She's Angry Today"
 date: 2026-03-26
 tags: [grief, nature, encounter]
-commit_note: "a stranger at the cliffs reads the sea's mood and accidentally names a grief the poet could not yet speak; the word arrives like a door opening from the outside"
+commit_message: |
+  Nearly nine years between the experience and the poem finding its form.
+
+  On 30th June 2017, in the days following my mother's death, our family retreated to Cwm yr Eglwys on the Welsh coast. I sat on a bench before a stormy sea, inside a grief that had no language yet.
+
+  A stranger passed, read the water, and said almost to himself: She's angry today. He meant the sea. He moved on without another word.
+
+  The poem explores that moment of accidental precision — the stranger as unknowing messenger, the way inner and outer world briefly became the same thing, and what the stillness of the following morning meant.
+footnote: "a stranger at the cliffs reads the sea's mood and accidentally names a grief the poet could not yet speak; the word arrives like a door opening from the outside"
 ---
 
 *She's angry today.*
