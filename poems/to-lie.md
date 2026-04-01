@@ -26,20 +26,40 @@ unguarded, open, known —
 the body learning it is loved
 and needing nothing more.
 
-Let my mother's hands be somewhere in that dark,
-the ones that held me
-before I knew I could be held.
-Let my friends arrive
-the way they always did —
-without announcement, with a laugh,
-already at the door.
+Let my mother's hands be somewhere in that dark,  
+the ones that held me  
+before I knew I could be held.  
 
-Let the ones I've grown with
-find me there beside her,
-and let the children come —
-mine first, then theirs,
-the ones who wear my eyes
-in faces I could not have dreamed.
+Let the ones I've grown with  
+find me there beside her,  
+and let the children come —  
+ours first, however they arrived,  
+then thiers, however they are still arriving —  
+the ones who wear our eyes  
+in faces I could not have dreamed.  
+
+Let our friends arrive  
+the way they always did —  
+Let us end up where we always end up —  
+scattered across the dark  
+like the last hour of the best night,  
+horizontal, helpless,  
+held by nothing but the ground  
+and each other's gravity.  
+
+And then let the voices start —
+from whatever corner of the black they've found —  
+the phrases that mean nothing  
+to anyone who wasn't there,  
+that mean everything  
+to everyone who was.  
+
+And the dark will fill with laughter
+that has no reason left  
+except that it's ours,  
+and we are still,  
+somehow,  
+all here.  
 
 Let them arrive the way they do:
 all noise and then all stillness,
@@ -50,7 +70,7 @@ and let that be enough.
 Let it be more than enough.
 
 Let us all lie down together
-in the oldest, softest room —
+in the oldest, softest, loftess room —
 
 where the self grows quiet,
 releases what it gripped,
