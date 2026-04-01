@@ -2,6 +2,7 @@
 title: Bearing Witness
 date: 2026-04-01
 tags: [fatherhood, love, grief, witness]
+draft: true
 footnote: "the map of what is safe, drawn by hand and held in trust — until the day you understand it was always theirs to keep"
 commit_message: |
   On the shift from being responsible for to responsible to — the fragmented memory of early parenthood, the cartography of a child's safe world, and a conversation with Jorge I don't want to forget: it becomes more bearing witness than stepping in.
