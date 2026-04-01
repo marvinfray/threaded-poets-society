@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("poems", function (collectionApi) {
     return collectionApi
       .getFilteredByGlob("poems/*.md")
+      .filter((item) => !item.data.draft)
       .sort((a, b) => b.date - a.date);
   });
 

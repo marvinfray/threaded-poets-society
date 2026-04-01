@@ -2,6 +2,7 @@
 title: The Church That Forgot Its Name
 date: 2026-03-14
 tags: [light, memory, ruin]
+draft: true
 commit_note: "thirty-two movements through a ruined church; what light does when it passes through old glass into older stone — what is held, what is translated, and what the crack in the north window reveals only by moonlight"
 ---
 
