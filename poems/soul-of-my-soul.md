@@ -1,4 +1,8 @@
-**Soul Of My Soul (4 Lissy)**
+---
+title: "Soul Of My Soul (4 Lissy)"
+date: 2021-01-17
+tags: [grief, loss, love, memory]
+---
 
 How quickly the sun drops from the sky  
 Just as my heart sinks under the weight  

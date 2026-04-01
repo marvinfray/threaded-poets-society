@@ -1,6 +1,6 @@
 ---
 title: The Same Moon
-date: 2026-03-26
+date: 2026-03-05
 tags: [tide, distance, time]
 commit_note: "the tide does not bargain; the shore must learn the rhythm it is given — what is uncovered is not failure, only what was always there, waiting for the right light"
 ---

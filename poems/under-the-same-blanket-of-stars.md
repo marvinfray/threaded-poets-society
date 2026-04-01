@@ -1,6 +1,6 @@
 ---
 title: Under the Same Blanket of Stars
-date: 2026-03-31
+date: 2026-01-19
 tags: [love, distance, music]
 commit_note: "a playlist strung between latitudes; a love that holds across distance by staying tuned to the same frequency — the thought of you still breathing somewhere, still laughing"
 ---

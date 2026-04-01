@@ -1,4 +1,8 @@
-**Bearing Witness**
+---
+title: Bearing Witness
+date: 2026-04-01
+tags: [fatherhood, love, grief, witness]
+---
 
 I remember fragments of the nights.
 Enough to know they happened.
