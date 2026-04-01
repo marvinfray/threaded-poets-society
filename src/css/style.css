@@ -326,13 +326,48 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+.poem-footnote {
+  font-family: var(--font-poem);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.poem-commit-details {
+  margin-top: 1.75rem;
+}
+
+.poem-commit-summary {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--border);
+  cursor: pointer;
+  list-style: none;
+  transition: color 0.15s ease;
+}
+
+.poem-commit-summary::-webkit-details-marker {
+  display: none;
+}
+
+.poem-commit-summary:hover {
+  color: var(--text-muted);
+}
+
+.poem-commit-details[open] .poem-commit-summary {
+  margin-bottom: 1.25rem;
+}
+
 .poem-commit-message {
   font-family: var(--font-ui);
   font-weight: 300;
   font-size: 0.88rem;
   color: var(--text-muted);
   line-height: 1.75;
-  margin-bottom: 1.5rem;
 }
 
 .poem-commit-message p {
@@ -341,17 +376,6 @@ a:hover {
 
 .poem-commit-message p:last-child {
   margin-bottom: 0;
-}
-
-.poem-footnote {
-  font-family: var(--font-poem);
-  font-style: italic;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  border-top: 1px solid var(--border);
-  padding-top: 1.5rem;
-  margin-top: 1.5rem;
 }
 
 /* --- Back navigation ----------------------------------------- */

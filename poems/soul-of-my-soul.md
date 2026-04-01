@@ -2,6 +2,7 @@
 title: "Soul Of My Soul (4 Lissy)"
 date: 2021-01-17
 tags: [grief, loss, love, memory]
+footnote: "grief as a shared weight crossing oceans; two people watching a funeral on a screen, wearing waistcoats, holding the same love in different time zones"
 commit_message: |
   Written for Lissy on the passing of her Grandad during COVID. She was in Australia; we were in Portchester — watching the funeral together on camera, wearing waistcoats in his honour.
 
