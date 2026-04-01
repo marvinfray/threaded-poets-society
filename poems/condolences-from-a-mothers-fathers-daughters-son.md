@@ -1,6 +1,6 @@
 ---
 title: "Condolences from A Mother's Father's, Daughter's Son"
-date: 2026-03-26
+date: 2024-12-17
 tags: [grief, family, sea, loss]
 commit_note: "grief passes between generations like salt water; the sea that roared back one person's loss becomes the cradle of another's — the same shore, different mourning"
 ---
