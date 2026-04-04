@@ -11,7 +11,7 @@ footnote: "a meditation on the invisible sustenance that connects us — to thos
 
 What sustains the breath we take?  
 The exhale of trees, the inhale of earth,  
-Feeding the root, bearing the fruit, 
+Feeding the root, bearing the fruit,   
 A cycle unbroken, turning anew.  
 
 Does it begin in the seedling's hope,  
