@@ -9,22 +9,22 @@ commit_message: |
 footnote: "a wish that death might feel like falling asleep beside the one you love; that all who came before, grew alongside, and will carry you forward might gather in that same stillness"
 ---
 
-There is a death I do not fear —
-the one that comes like her beside me,
-warm breath at my shoulder,
-the slow unlacing of the day.
+There is a death I do not fear —  
+the one that comes like her beside me,  
+warm breath at my shoulder,  
+the slow unlacing of the day.  
 
-To lie with her is to forget
-the name of wanting.
-Her arm across my chest
-a tide that does not pull —
-only holds.
+To lie with her is to forget  
+the name of wanting.  
+Her arm across my chest  
+a tide that does not pull —  
+only holds.  
 
-So let me die like this:
-let me go the way I go to sleep beside her,
-unguarded, open, known —
-the body learning it is loved
-and needing nothing more.
+So let me die like this:  
+let me go the way I go to sleep beside her,  
+unguarded, open, known —  
+the body learning it is loved  
+and needing nothing more.  
 
 Let my mother's hands be somewhere in that dark,  
 the ones that held me  
