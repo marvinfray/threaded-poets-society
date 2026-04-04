@@ -79,25 +79,25 @@ Not the postcard journey.
 Not the gap year mythology.  
 Just the strange, lit, borrowed, real thing.  
 
-Between those nights, there was a balcony
-in Lonavala —
-a hill station where the world
-arranged itself below us
-like something we'd been handed.
-We sat together, Abi and I,
-looking out over the green and the distance,
-the kind of quiet that earns its name.
-Except.
-Beneath us, a road —
-horns, engines, the whole insistence of it,
-a river of noise that didn't know
-and didn't care
-that we were up here
-trying to be still.
-And still.
-We were still.
-Her beside me was the stillness.
-The road was just the road.
+Between those nights, there was a balcony  
+in Lonavala —  
+a hill station where the world  
+arranged itself below us  
+like something we'd been handed.  
+We sat together, Abi and I,  
+looking out over the green and the distance,  
+the kind of quiet that earns its name.  
+Except.  
+Beneath us, a road —  
+horns, engines, the whole insistence of it,  
+a river of noise that didn't know  
+and didn't care  
+that we were up here  
+trying to be still.  
+And still.  
+We were still.  
+Her beside me was the stillness.  
+The road was just the road.  
 
 And at the centre of it: Likhit.  
 
