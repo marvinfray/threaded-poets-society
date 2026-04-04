@@ -15,7 +15,7 @@ Feeding the root, bearing the fruit,
 A cycle unbroken, turning anew.
 
 Does it begin in the seedling's hope,
-Or in the soil's quiet labor?
+Or in the soil's labor?
 Perhaps in the rain's soft hands
 Or the sun's faithful, tireless arc.
 It moves in rhythms, unseen yet constant,
