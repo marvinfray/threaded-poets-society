@@ -43,8 +43,8 @@ depending on where you stand.
 
 What holds the field together  
 is the habit of returning —  
+the fence we lean on,  
 the gate left on the latch,  
-the cup left out for someone,  
 the invitation to learn each other's names  
 before we learn each other's stories  
 and love both anyway.  
