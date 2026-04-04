@@ -49,7 +49,7 @@ who will carry your name into old age.
 
 In Goa we danced until the moon  
 was all that was left of the sky,  
-and the acid made the stars seem  
+and whatever we'd taken made the stars seem  
 like they were breathing,  
 and Abi and Lissy were there  
 before they weren't —  
