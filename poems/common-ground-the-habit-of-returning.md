@@ -48,8 +48,6 @@ the cup left out for someone,
 the invitation to learn each other's names  
 before we learn each other's stories  
 and love both anyway.  
-A fire tends itself when enough hands feed it —  
-though someone, somewhere, is always counting the hands.  
 
 This is the place worth inhabiting —  
 not the sameness, not the difference,  
