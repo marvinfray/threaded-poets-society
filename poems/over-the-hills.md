@@ -1,5 +1,5 @@
 ---
-title: Over The Hills
+title: लिख् (Over The Hills)
 date: 2026-04-04
 draft: true
 tags: [travel, friendship, identity, freedom]
@@ -101,7 +101,7 @@ The road was just the road.
 
 And at the centre of it: Likhit.  
 
-Likhit, which means *Written.*  
+Likhit (लिख्), which means *Written.*  
 
 Of course it does.  
 Of course the best friend I'd find  
