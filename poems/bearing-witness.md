@@ -22,7 +22,7 @@ the mind has since filed away —
 protection, not ingratitude.
 
 But I remember the mornings.  
-God, I remember the mornings —  
+God damn, I remember the mornings —  
 small hands finding mine  
 before their eyes were open,  
 the world not yet a thing  
