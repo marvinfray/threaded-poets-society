@@ -1,7 +1,7 @@
 ---
 title: लिख् (Over The Hills)
 date: 2026-04-04
-draft: true
+draft: false
 tags: [travel, friendship, identity, freedom]
 commit_message: |
   Written from a playlist built for the road — and a memory of India that ended with Led Zeppelin and a friend whose name means Written.
