@@ -15,11 +15,11 @@ commit_message: |
 ---
 
 I remember fragments of the nights.  
-Enough to know they happened.
-Enough to know the body
-was asked to do things
-the mind has since filed away —
-protection, not ingratitude.
+Enough to know they happened.  
+Enough to know the body  
+was asked to do things  
+the mind has since filed away —  
+protection, not ingratitude.  
 
 But I remember the mornings.  
 God damn, I remember the mornings —  
