@@ -26,7 +26,8 @@ And lately we feel it in slivers.
 Spring still remembering how much of itself to give,  
 finding us in pockets of garden,  
 gaps in the grey —  
-before the machine called us back.  
+until the clouds remember themselves  
+and the machine called us back.  
 Barely. Begrudgingly.  
 The inbox. The calendar. The wheels  
 of a working week built for production,  
