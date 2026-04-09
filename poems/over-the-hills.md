@@ -54,23 +54,23 @@ like they were breathing,
 and Abi and Lissy were there  
 before they weren't —  
 before they turned their faces south  
-and were swallowed whole by Southeast Asia  
+and were swallowed whole  
 and I was left with just the residue of the night,  
 standing at the ocean's edge  
-like the Fool at the cliff —  
+like a fool —  
 pack gone, friends gone,  
-only a dog appearing from somewhere  
+a dog appearing from somewhere  
 to stand beside me  
 and look out at the same water,  
 unbothered,  
 as if this was always the plan.  
 
 In Rajasthan, on a rooftop,  
-an Afghan man and I  
+He, an Afghan man and I  
 sat with the smoke between us like a treaty,  
 comparing the countries we carried in our chests,  
 while below and beyond and impossible,  
-Beyoncé sang at a princess's wedding —  
+A queen sang at a princess's wedding —  
 her voice rising over the palace walls  
 into our ordinary miracle of a night.  
 
@@ -84,7 +84,7 @@ in Lonavala —
 a hill station where the world  
 arranged itself below us  
 like something we'd been handed.  
-We sat together, Abi and I,  
+We sat together, her and I,  
 looking out over the green and the distance,  
 the kind of quiet that earns its name.  
 Except.  
