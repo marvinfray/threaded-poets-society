@@ -10,8 +10,7 @@ commit_message:
 
 I used to wake into the bells —  
 St Mary's, end of our road, arriving through the window  
-before I was fully back in myself,  
-still loose in whatever the night had made,  
+before I was fully myself,  
 the summer already certain  
 of things I hadn't caught up to yet.  
 
