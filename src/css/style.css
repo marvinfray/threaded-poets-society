@@ -315,6 +315,13 @@ a:hover {
   opacity: 0.85;
 }
 
+/* Preformatted text in poems (preserves spacing/indentation) */
+.poem pre {
+  font-family: inherit;
+  white-space: pre;
+  overflow-x: auto;
+}
+
 /* --- Poem footer (commit message + footnote) ----------------- */
 .poem-footer {
   margin-top: 4rem;
