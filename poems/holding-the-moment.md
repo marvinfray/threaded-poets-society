@@ -2,7 +2,7 @@
 title: Holding the Moment
 date: 2026-04-24
 tags: [intimacy, trust, body, presence, practice, Abi]
-draft: false
+draft: true
 footnote: |
   The same instinct that reaches for retreat in cold water reaches for it in intimacy.
 commit_message: |
