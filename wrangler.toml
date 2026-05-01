@@ -1,0 +1,17 @@
+name              = "walt-proxy"
+main              = "worker/index.js"
+compatibility_date = "2024-11-01"
+
+# account_id is supplied via the CLOUDFLARE_ACCOUNT_ID environment variable
+# in CI (see .github/workflows/deploy-worker.yml) so it does not need to
+# live in this file.
+
+[vars]
+# The GitHub Pages origin that is allowed to call this Worker.
+# Update this if the site is ever served from a custom domain.
+ALLOWED_ORIGIN = "https://marvinfray.github.io"
+
+# HF_TOKEN is a Worker secret, not a plain var, so it does not appear here.
+# Set it once with:  echo "$HF_TOKEN" | npx wrangler secret put HF_TOKEN
+# The deploy-worker.yml workflow does this automatically from the HF_TOKEN
+# repository secret.

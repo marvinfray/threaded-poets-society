@@ -34,6 +34,10 @@ jobs:
 
       - name: Build with Eleventy
         run: npm run build
+        env:
+          # Bakes the Cloudflare Worker URL into /walt at build time.
+          # Add WALT_PROXY_URL as a repository secret once the Worker is deployed.
+          WALT_PROXY_URL: ${{ secrets.WALT_PROXY_URL }}
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
