@@ -13,10 +13,8 @@ draft: false
 footnote: Some armour is built so early you forget you're wearing it.
 commit_message: |
   During meditation, I found myself sitting with humiliation and ritual, a particular kind that repeats, that has a shape. Being called out across a room for things I either couldn't see, couldn't have known, or simply didn't do.
-  Accused of a colour I had no way of perceiving. Misidentified in a way I understood only much later. An ADHD mind, alive and curious, penalised for existing at the wrong volume. I didn't tell anyone. I just carried it.
+  Misidentified in a way I understood only much later. An ADHD mind, alive and curious, penalised for existing at the wrong volume. I didn't tell anyone. I just carried it.
 ---
-
-**Careless Instruments**
 
 Being seen can happen without warning.  
 A name called out across a room.  
