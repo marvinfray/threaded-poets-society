@@ -1,21 +1,19 @@
----
 title: Careless Instruments
 date: 2026-05-01
 tags:
   - identity
   - shame
-  - self-protection
-  - vulnerability
+  - humiliation
   - childhood
-  - love
-  - work
-draft: true
+  - ADHD
+  - repair
+  - parenthood
+draft: false
 footnote: Some armour is built so early you forget you're wearing it.
 commit_message: |
-  I wrote this after sitting with the realisation that so much of how I move through rooms was built around a child's unanswered confusion. 
+  During meditation, I found myself sitting with humiliation and ritual, a particular kind that repeats, that has a shape. Being called out across a room for things I either couldn't see, couldn't have known, or simply didn't do.
+  Accused of a colour I had no way of perceiving. Misidentified in a way I understood only much later. An ADHD mind, alive and curious, penalised for existing at the wrong volume. I didn't tell anyone. I just carried it.
 ---
-
-**Careless Instruments**
 
 Being seen can happen without warning.  
 A name called out across a room.  
@@ -27,9 +25,9 @@ called to account for a shape you did not make.
 The hand that reached for you was certain.  
 It did not need to look closely.  
 
-This is what authority does when it is barely watching:  
-it presses, and calls the pressure truth.  
-It names you, and expects you to carry the name  
+Authority, barely watching,  
+presses and calls the pressure truth.  
+It names you, and expects you to carry it  
 like a sentence already served.  
 
 So you learned to prepare.  
@@ -37,53 +35,49 @@ To clothe yourself in anticipation,
 to rehearse the angles of your voice,  
 to measure each word against an invisible crowd.  
 
-Even silence became a kind of armour.  
+Even silence became armour...  
 
-The sculptor was not cruel, perhaps.  
-Just careless with its instruments—  
+The sculptor was not cruel.  
+Just careless with his instruments —  
 pressing without looking,  
 certain without understanding.  
 
 And the shape that remained:  
 edges you did not choose,  
 prickly still, like cold water  
-landing on the back without warning.  
+finding the back like daggers.  
 
----
+—  
 
-I want to speak to you now—  
+I want to speak to you now —  
 the one who stood there  
 holding a confusion dressed as guilt.  
 
-You did not know what you had done.  
-You could not have known.  
+There was nothing there to know.  
 The hand that reached for you  
 was not skilled enough to see you.  
 
 I am not that hand.  
+I come with softer instruments...  
 
-I come with softer instruments.  
 Not to press or correct or name,  
 but to look at what was made  
-and say: *this was not the shape of you.*   
+and say: this was not the shape of you.  
 
-Not sculptor now, but painter.  
-Returning to the canvas  
+Half poet, half painter.  
+Returning to the canvas,  
 not to erase, but to add light  
 where the shadows settled too hard,  
 to trace the edges  
 until they know they are not wounds.  
 
 The prickliness remains.  
-It will—when cold water hits the back,  
+It will — when cold water hits the back,  
 when a room turns and laughter arrives early.  
 
-But there is a face at the threshold now.  
-Familiar. Unhurried.  
-Not the barely-visible hand of judgement.  
+But there is another hand at the threshold now.  
+Familiar. Unhurried. Aged.  
+Steadying the barely-visible hand of judgement.  
 
-Just you, older, returning.  
-*I see you. I know what happened.  
-You didn't do it wrong.*  
-
----
+We'll catch you. We know what happened.  
+You didn't do it wrong.  
