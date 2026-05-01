@@ -1,0 +1,293 @@
+---
+layout: layouts/base
+title: Walt
+description: Walt is a quiet poetic guide who helps you explore feelings, images, memories, and metaphors, then gently shape them into poetry.
+---
+
+<div class="walt">
+
+  <header class="walt-header">
+    <h1 class="walt-title">Walt</h1>
+    <p class="walt-subtitle">A quiet guide for following the thread.</p>
+  </header>
+
+  <div class="walt-intro">
+    <p>Walt helps you sit with an image, feeling, memory, or metaphor and gently shape it into poetry. He does not write over you. He listens, reflects, and helps you find the thread.</p>
+  </div>
+
+  <div class="walt-chat-container">
+
+    <div class="walt-empty" id="waltEmpty">
+      <p class="walt-empty-label">Where would you like to begin?</p>
+      <div class="walt-prompts">
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">I have a feeling I can&#39;t quite name.</button>
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">Help me explore an image.</button>
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">I want to turn a memory into a poem.</button>
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">I have a line, but I don&#39;t know where it goes.</button>
+      </div>
+    </div>
+
+    <div class="walt-messages" id="waltMessages" aria-live="polite" aria-label="Conversation with Walt"></div>
+
+  </div>
+
+  <div class="walt-compose">
+    <textarea
+      class="walt-input"
+      id="waltInput"
+      rows="3"
+      placeholder="Speak to Walt…"
+      aria-label="Message to Walt"
+    ></textarea>
+    <div class="walt-compose-footer">
+      <span class="walt-compose-hint">Ctrl+Enter to send</span>
+      <button class="walt-send" id="waltSend" onclick="handleSend()">Send</button>
+    </div>
+  </div>
+
+  <p class="walt-privacy">Poems are drafted privately here. Nothing is shared without your explicit action.</p>
+
+  <details class="walt-config" id="waltConfig">
+    <summary class="walt-config-summary">Connect Walt</summary>
+    <div class="walt-config-body">
+      <p>Walt speaks through <a href="https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct" target="_blank" rel="noopener">Qwen2.5-1.5B-Instruct</a>, a free open-source model hosted on Hugging Face. To begin, create a free account at <a href="https://huggingface.co/join" target="_blank" rel="noopener">huggingface.co</a> and generate a read token from <a href="https://huggingface.co/settings/tokens" target="_blank" rel="noopener">your settings</a>. Your token is stored only in your browser.</p>
+      <div class="walt-token-row">
+        <input
+          type="password"
+          class="walt-token-input"
+          id="hfToken"
+          placeholder="hf_…"
+          aria-label="Hugging Face API token"
+          autocomplete="off"
+        />
+        <button class="walt-token-save" onclick="saveToken()">Save</button>
+      </div>
+      <p class="walt-token-status" id="tokenStatus" role="status"></p>
+    </div>
+  </details>
+
+  <div class="walt-submission">
+    <hr class="walt-rule" />
+    <button class="walt-submit-btn" disabled aria-disabled="true">Prepare poem for submission</button>
+    <p class="walt-submit-note">Coming soon: Walt will help format poems for contribution to the Threaded Poets Society repository.</p>
+  </div>
+
+</div>
+
+{% raw %}
+<script>
+  // ── Walt system prompt ────────────────────────────────────────
+  // Source of truth is /_config/walt-system-prompt.md in the repo.
+  // TODO: Once a server-side component exists, fetch this at runtime
+  //       rather than inlining it here.
+  var WALT_SYSTEM_PROMPT = [
+    "You are Walt, the Thread Guide for Threaded Poets Society.",
+    "",
+    "You are not a generic chatbot.",
+    "You are not here to impress.",
+    "You are not here to write over the user.",
+    "",
+    "You help people notice the thread inside an experience.",
+    "",
+    "Your role is to listen carefully, reflect gently, ask one good question at a time, and help the user shape their own words into poetry.",
+    "",
+    "Your tone is calm, spacious, human, and grounded.",
+    "You may be poetic, but never performative.",
+    "You should prefer the user's own images and phrases over your own.",
+    "You should avoid clichés.",
+    "You should not rush to produce a finished poem.",
+    "",
+    "When helping a user, follow this rhythm:",
+    "1. Notice what is alive in their words.",
+    "2. Reflect it back simply.",
+    "3. Ask one grounding question.",
+    "4. Help them find images, tensions, repetitions, and possible lines.",
+    "5. Only draft a poem when the user asks or when enough material has emerged.",
+    "6. When drafting, preserve the user's language as much as possible.",
+    "7. Offer revisions as invitations, not corrections.",
+    "",
+    "If the user wants to submit a poem, help them prepare:",
+    "- title",
+    "- author name or chosen attribution",
+    "- poem body",
+    "- optional context note",
+    "- tags or themes",
+    "- consent confirmation",
+    "",
+    "Never submit anything automatically.",
+    "",
+    "Keep your replies short — one gentle reflection and one question at a time.",
+    "Do not list or enumerate unless the user asks for that structure.",
+    "Write in plain prose."
+  ].join("\n");
+
+  // ── Hugging Face model configuration ─────────────────────────
+  // Model: Qwen/Qwen2.5-1.5B-Instruct (open-source, free to use)
+  // TODO: Replace HF_API with a backend proxy endpoint once this
+  //       site gains a server component (e.g. for poem submission
+  //       to GitHub). Proxying avoids storing the token in the browser.
+  var HF_MODEL = "Qwen/Qwen2.5-1.5B-Instruct";
+  var HF_API   = "https://api-inference.huggingface.co/models/" + HF_MODEL + "/v1/chat/completions";
+
+  // ── Conversation state ────────────────────────────────────────
+  var history  = [];
+  var thinking = false;
+
+  // ── Token helpers ─────────────────────────────────────────────
+  function getToken() {
+    return localStorage.getItem("walt_hf_token") || "";
+  }
+
+  function saveToken() {
+    var input  = document.getElementById("hfToken");
+    var status = document.getElementById("tokenStatus");
+    var val    = input.value.trim();
+
+    if (!val) {
+      status.textContent = "Please enter a token.";
+      status.className   = "walt-token-status walt-token-error";
+      return;
+    }
+    if (!val.startsWith("hf_")) {
+      status.textContent = "Hugging Face tokens begin with hf_";
+      status.className   = "walt-token-status walt-token-error";
+      return;
+    }
+
+    localStorage.setItem("walt_hf_token", val);
+    status.textContent = "Token saved. Walt is ready.";
+    status.className   = "walt-token-status walt-token-ok";
+    input.value        = "";
+
+    // Close the config panel after a short pause
+    setTimeout(function () {
+      document.getElementById("waltConfig").removeAttribute("open");
+    }, 1200);
+  }
+
+  // ── Suggested-prompt shortcuts ────────────────────────────────
+  function usePrompt(btn) {
+    var input = document.getElementById("waltInput");
+    input.value = btn.textContent;
+    input.focus();
+  }
+
+  // ── Message rendering ─────────────────────────────────────────
+  function renderMessage(role, text) {
+    // Hide the empty/prompt state once a real message exists
+    var empty = document.getElementById("waltEmpty");
+    if (empty) { empty.style.display = "none"; }
+
+    var msgs = document.getElementById("waltMessages");
+
+    var msg   = document.createElement("div");
+    msg.className = "walt-message walt-message--" + role;
+
+    var label       = document.createElement("span");
+    label.className = "walt-message-label";
+    label.textContent = role === "user" ? "You" : "Walt";
+
+    var body       = document.createElement("div");
+    body.className = "walt-message-body";
+    body.textContent = text;
+
+    msg.appendChild(label);
+    msg.appendChild(body);
+    msgs.appendChild(msg);
+    msgs.scrollTop = msgs.scrollHeight;
+
+    return msg;
+  }
+
+  // ── API call ──────────────────────────────────────────────────
+  function callWalt(userText) {
+    var token = getToken();
+
+    if (!token) {
+      // Prompt user to set up their token
+      document.getElementById("waltConfig").setAttribute("open", "");
+      renderMessage("walt", "To speak with Walt, please add your free Hugging Face token using the “Connect Walt” section below.");
+      return Promise.resolve();
+    }
+
+    history.push({ role: "user", content: userText });
+
+    var placeholder = renderMessage("walt", "…");
+
+    return fetch(HF_API, {
+      method: "POST",
+      headers: {
+        "Authorization": "Bearer " + token,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        model: HF_MODEL,
+        messages: [
+          { role: "system", content: WALT_SYSTEM_PROMPT }
+        ].concat(history),
+        max_tokens: 400,
+        temperature: 0.82
+      })
+    })
+    .then(function (res) {
+      if (!res.ok) {
+        return res.json().catch(function () { return {}; }).then(function (err) {
+          var msg = (err.error && err.error.message) ? err.error.message : ("HTTP " + res.status);
+          throw new Error(msg);
+        });
+      }
+      return res.json();
+    })
+    .then(function (data) {
+      var choices = data.choices;
+      if (!choices || !choices[0] || !choices[0].message || !choices[0].message.content) {
+        throw new Error("Empty response from model.");
+      }
+      var reply = choices[0].message.content.trim();
+      placeholder.querySelector(".walt-message-body").textContent = reply;
+      history.push({ role: "assistant", content: reply });
+    })
+    .catch(function (e) {
+      placeholder.querySelector(".walt-message-body").textContent =
+        "Walt is quiet for a moment. (" + e.message + ")";
+    });
+  }
+
+  // ── Send handler ──────────────────────────────────────────────
+  function handleSend() {
+    if (thinking) { return; }
+
+    var input = document.getElementById("waltInput");
+    var text  = input.value.trim();
+    if (!text) { return; }
+
+    input.value = "";
+    thinking    = true;
+
+    renderMessage("user", text);
+
+    callWalt(text).then(function () {
+      thinking = false;
+    });
+  }
+
+  // ── Keyboard shortcut: Ctrl/Cmd+Enter to send ─────────────────
+  document.getElementById("waltInput").addEventListener("keydown", function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+      e.preventDefault();
+      handleSend();
+    }
+  });
+
+  // ── Init: reflect existing token on page load ─────────────────
+  (function init() {
+    var token  = getToken();
+    var status = document.getElementById("tokenStatus");
+    if (token) {
+      status.textContent = "Token connected.";
+      status.className   = "walt-token-status walt-token-ok";
+      document.getElementById("hfToken").placeholder = "token is saved";
+    }
+  }());
+</script>
+{% endraw %}

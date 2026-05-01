@@ -88,6 +88,46 @@ GitHub Pages must be configured to use **GitHub Actions** as the source (Setting
 
 ---
 
+## Walt — the poetic assistant
+
+[Walt](/walt/) is an LLM-driven poetic guide available at `/walt`. He helps
+visitors explore feelings, images, metaphors, and memories, then gently shapes
+those reflections into poems. Walt is not a generic chatbot; he listens, reflects,
+and asks one good question at a time.
+
+### How Walt works
+
+Walt runs entirely in the browser. There is no backend.
+
+1. The user supplies a free [Hugging Face](https://huggingface.co/settings/tokens)
+   read token — stored only in `localStorage`, never sent anywhere except the
+   Hugging Face Inference API.
+2. Walt calls **[Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)**
+   via the free HF Serverless Inference endpoint.
+3. No paid API key is required. No data is collected.
+
+### Walt system prompt
+
+Walt's character and constraints live in `walt-system-prompt.md` at the project
+root. The prompt is also inlined into `walt.njk` for the current static build.
+When a server-side component is added, the prompt should be loaded server-side
+and the HF token should move to a backend proxy.
+
+### Future: poem submission
+
+The **Prepare poem for submission** button on the Walt page is a placeholder.
+The intended flow once a backend exists:
+
+1. User finishes drafting a poem with Walt.
+2. Walt helps format it (title, attribution, tags, context note).
+3. User approves and clicks submit.
+4. A backend endpoint opens a pull request to the `poems/` directory.
+5. The poem enters the normal review/merge flow.
+
+See `walt-system-prompt.md` for full architecture notes.
+
+---
+
 ## Tech stack
 
 - **[Eleventy (11ty)](https://www.11ty.dev/)** — static site generator
