@@ -15,7 +15,7 @@ commit_message: |
   I wrote this after sitting with the realisation that so much of how I move through rooms was built around a child's unanswered confusion. 
 ---
 
-**Seen Without Language**
+**Careless Instruments**
 
 Being seen can happen without warning.  
 A name called out across a room.  
