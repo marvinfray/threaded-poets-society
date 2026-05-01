@@ -88,6 +88,68 @@ GitHub Pages must be configured to use **GitHub Actions** as the source (Setting
 
 ---
 
+## Walt — the poetic assistant
+
+[Walt](/walt/) is an LLM-driven poetic guide available at `/walt`. He helps
+visitors explore feelings, images, metaphors, and memories, then gently shapes
+those reflections into poems. Walt is not a generic chatbot; he listens, reflects,
+and asks one good question at a time.
+
+### How Walt works
+
+Walt's browser interface talks to a small **Cloudflare Worker** (`worker/index.js`)
+that proxies requests to Hugging Face. The Worker holds the HF token as a secret —
+the browser never sees it.
+
+- **Model:** [Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct) — open-source, free tier
+- **Proxy:** Cloudflare Worker — free tier (100 k requests/day)
+- **No paid API required. No data collected.**
+
+The Worker URL is baked into the built site at deploy time by Eleventy, read from
+the `WALT_PROXY_URL` repository secret.
+
+### First-time setup (Cloudflare Worker)
+
+You will need:
+
+| Secret | Where to get it |
+|--------|-----------------|
+| `CF_API_TOKEN` | Cloudflare dashboard → My Profile → API Tokens → Create token → **Edit Cloudflare Workers** template |
+| `CF_ACCOUNT_ID` | Cloudflare dashboard → right sidebar → copy Account ID |
+| `HF_TOKEN` | [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) → New token → **Read** |
+
+Add all three as **repository secrets** (Settings → Secrets and variables → Actions).
+
+Then:
+
+1. Push to `main` — the **Deploy Walt Worker** workflow runs, deploys the Worker,
+   and prints the Worker URL in its logs (e.g. `https://walt-proxy.yourname.workers.dev`).
+2. Add that URL as a fourth repository secret: `WALT_PROXY_URL`.
+3. Trigger a site rebuild (push anything, or re-run the Pages workflow) — Eleventy
+   bakes the URL into `/walt` and Walt is live.
+
+### Walt system prompt
+
+Walt's character and constraints live in `walt-system-prompt.md` at the project
+root. The prompt is also inlined into `walt.njk` for the current static build.
+When a server-side component is added, the prompt should be loaded server-side
+and the HF token should move to a backend proxy.
+
+### Future: poem submission
+
+The **Prepare poem for submission** button on the Walt page is a placeholder.
+The intended flow once a backend exists:
+
+1. User finishes drafting a poem with Walt.
+2. Walt helps format it (title, attribution, tags, context note).
+3. User approves and clicks submit.
+4. A backend endpoint opens a pull request to the `poems/` directory.
+5. The poem enters the normal review/merge flow.
+
+See `walt-system-prompt.md` for full architecture notes.
+
+---
+
 ## Tech stack
 
 - **[Eleventy (11ty)](https://www.11ty.dev/)** — static site generator

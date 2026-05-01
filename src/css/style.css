@@ -429,6 +429,241 @@ a:hover {
   margin-bottom: 0;
 }
 
+/* --- Walt page ----------------------------------------------- */
+.walt {
+  max-width: 100%;
+}
+
+.walt-header {
+  margin-bottom: 0.5rem;
+}
+
+.walt-title {
+  font-family: var(--font-poem);
+  font-weight: 400;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 0.6rem;
+}
+
+.walt-subtitle {
+  font-family: var(--font-poem);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.walt-intro {
+  margin-bottom: 3rem;
+}
+
+.walt-intro p {
+  font-family: var(--font-poem);
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--text-muted);
+}
+
+/* Chat container */
+.walt-chat-container {
+  border: 1px solid var(--border);
+  min-height: 240px;
+}
+
+/* Empty state */
+.walt-empty {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.walt-empty-label {
+  font-family: var(--font-poem);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+.walt-prompts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.walt-prompt-btn {
+  background: none;
+  border: none;
+  border-left: 2px solid var(--border);
+  padding: 0.25rem 0.75rem;
+  font-family: var(--font-poem);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.6;
+  transition: color 0.15s ease, border-left-color 0.15s ease;
+}
+
+.walt-prompt-btn:hover {
+  color: var(--text);
+  border-left-color: var(--accent);
+}
+
+/* Messages */
+.walt-messages {
+  display: flex;
+  flex-direction: column;
+  max-height: 55vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.walt-message {
+  padding: 1.25rem 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.walt-message:first-child {
+  border-top: none;
+}
+
+.walt-message-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--border);
+  margin-bottom: 0.55rem;
+}
+
+.walt-message--walt .walt-message-label {
+  color: var(--accent);
+  opacity: 0.75;
+}
+
+.walt-message--user .walt-message-body {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+.walt-message--walt .walt-message-body {
+  font-family: var(--font-poem);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text);
+}
+
+/* Compose area */
+.walt-compose {
+  border: 1px solid var(--border);
+  border-top: none;
+  margin-bottom: 0.75rem;
+}
+
+.walt-input {
+  background: none;
+  border: none;
+  padding: 1rem 1.25rem 0.75rem;
+  font-family: var(--font-poem);
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  resize: none;
+  outline: none;
+  width: 100%;
+}
+
+.walt-input::placeholder {
+  color: var(--border);
+  font-style: italic;
+}
+
+.walt-compose-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.75rem 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.walt-compose-hint {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--border);
+}
+
+.walt-send {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.85rem;
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.walt-send:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+/* Privacy note */
+.walt-privacy {
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  color: var(--border);
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+/* Submission section */
+.walt-submission {
+  margin-bottom: 2rem;
+}
+
+.walt-rule {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.walt-submit-btn {
+  background: none;
+  border: 1px solid var(--border);
+  padding: 0.5rem 1.25rem;
+  font-family: var(--font-ui);
+  font-weight: 300;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: var(--border);
+  cursor: not-allowed;
+  display: block;
+  margin-bottom: 0.9rem;
+}
+
+.walt-submit-note {
+  font-family: var(--font-poem);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--border);
+  line-height: 1.7;
+}
+
 /* --- Mobile-first responsive --------------------------------- */
 @media (max-width: 640px) {
   :root {

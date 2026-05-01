@@ -1,0 +1,165 @@
+---
+layout: layouts/base
+title: Walt
+description: Walt is a quiet poetic guide who helps you explore feelings, images, memories, and metaphors, then gently shape them into poetry.
+---
+
+<div class="walt">
+
+  <header class="walt-header">
+    <h1 class="walt-title">Walt</h1>
+    <p class="walt-subtitle">A quiet guide for following the thread.</p>
+  </header>
+
+  <div class="walt-intro">
+    <p>Walt helps you sit with an image, feeling, memory, or metaphor and gently shape it into poetry. He does not write over you. He listens, reflects, and helps you find the thread.</p>
+  </div>
+
+  <div class="walt-chat-container">
+
+    <div class="walt-empty" id="waltEmpty">
+      <p class="walt-empty-label">Where would you like to begin?</p>
+      <div class="walt-prompts">
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">I have a feeling I can&#39;t quite name.</button>
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">Help me explore an image.</button>
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">I want to turn a memory into a poem.</button>
+        <button class="walt-prompt-btn" onclick="usePrompt(this)">I have a line, but I don&#39;t know where it goes.</button>
+      </div>
+    </div>
+
+    <div class="walt-messages" id="waltMessages" aria-live="polite" aria-label="Conversation with Walt"></div>
+
+  </div>
+
+  <div class="walt-compose">
+    <textarea
+      class="walt-input"
+      id="waltInput"
+      rows="3"
+      placeholder="Speak to Walt…"
+      aria-label="Message to Walt"
+    ></textarea>
+    <div class="walt-compose-footer">
+      <span class="walt-compose-hint">Ctrl+Enter to send</span>
+      <button class="walt-send" id="waltSend" onclick="handleSend()">Send</button>
+    </div>
+  </div>
+
+  <p class="walt-privacy">Poems are drafted privately here. Nothing is shared without your explicit action.</p>
+
+  <div class="walt-submission">
+    <hr class="walt-rule" />
+    <button class="walt-submit-btn" disabled aria-disabled="true">Prepare poem for submission</button>
+    <p class="walt-submit-note">Coming soon: Walt will help format poems for contribution to the Threaded Poets Society repository.</p>
+  </div>
+
+</div>
+
+{% raw %}
+<script>
+  // Walt proxy URL — baked in at build time by Eleventy from the WALT_PROXY_URL
+  // repository secret. Points to the Cloudflare Worker in worker/index.js.
+  // If empty, Walt will explain what is missing rather than failing silently.
+  var WALT_PROXY = "{% endraw %}{{ walt.proxy_url }}{% raw %}";
+
+  // ── Conversation history ──────────────────────────────────────
+  // Only user/assistant turns. The system prompt is enforced by the Worker.
+  var history  = [];
+  var thinking = false;
+
+  // ── Suggested-prompt shortcuts ────────────────────────────────
+  function usePrompt(btn) {
+    var input = document.getElementById("waltInput");
+    input.value = btn.textContent;
+    input.focus();
+  }
+
+  // ── Message rendering ─────────────────────────────────────────
+  function renderMessage(role, text) {
+    var empty = document.getElementById("waltEmpty");
+    if (empty) { empty.style.display = "none"; }
+
+    var msgs = document.getElementById("waltMessages");
+
+    var msg         = document.createElement("div");
+    msg.className   = "walt-message walt-message--" + role;
+
+    var label       = document.createElement("span");
+    label.className = "walt-message-label";
+    label.textContent = role === "user" ? "You" : "Walt";
+
+    var body        = document.createElement("div");
+    body.className  = "walt-message-body";
+    body.textContent = text;
+
+    msg.appendChild(label);
+    msg.appendChild(body);
+    msgs.appendChild(msg);
+    msgs.scrollTop = msgs.scrollHeight;
+
+    return msg;
+  }
+
+  // ── API call ──────────────────────────────────────────────────
+  function callWalt(userText) {
+    if (!WALT_PROXY) {
+      renderMessage("walt", "Walt is not yet connected. The site needs to be rebuilt after the WALT_PROXY_URL secret is added — see the repository README for setup steps.");
+      return Promise.resolve();
+    }
+
+    history.push({ role: "user", content: userText });
+
+    var placeholder = renderMessage("walt", "…");
+
+    return fetch(WALT_PROXY, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ messages: history })
+    })
+    .then(function (res) {
+      if (!res.ok) {
+        return res.json().catch(function () { return {}; }).then(function (err) {
+          throw new Error((err.error && err.error.message) ? err.error.message : "HTTP " + res.status);
+        });
+      }
+      return res.json();
+    })
+    .then(function (data) {
+      var choices = data && data.choices;
+      if (!choices || !choices[0] || !choices[0].message || !choices[0].message.content) {
+        throw new Error("Empty response from model.");
+      }
+      var reply = choices[0].message.content.trim();
+      placeholder.querySelector(".walt-message-body").textContent = reply;
+      history.push({ role: "assistant", content: reply });
+    })
+    .catch(function (e) {
+      placeholder.querySelector(".walt-message-body").textContent =
+        "Walt is quiet for a moment. (" + e.message + ")";
+    });
+  }
+
+  // ── Send handler ──────────────────────────────────────────────
+  function handleSend() {
+    if (thinking) { return; }
+
+    var input = document.getElementById("waltInput");
+    var text  = input.value.trim();
+    if (!text) { return; }
+
+    input.value = "";
+    thinking    = true;
+    renderMessage("user", text);
+
+    callWalt(text).then(function () { thinking = false; });
+  }
+
+  // ── Ctrl/Cmd+Enter to send ────────────────────────────────────
+  document.getElementById("waltInput").addEventListener("keydown", function (e) {
+    if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+      e.preventDefault();
+      handleSend();
+    }
+  });
+</script>
+{% endraw %}
