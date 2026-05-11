@@ -1,7 +1,8 @@
 ---
 title: The Rising of the House's Sun
-date: 2026-05-08
+date: 2026-05-11
 tags:
+  - sun
   - grief
   - elegy
   - father
@@ -9,7 +10,6 @@ tags:
   - Spain
   - Celtic
   - Easter
-  - sun
   - moon
 draft: false
 footnote: >
