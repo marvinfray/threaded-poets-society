@@ -28,6 +28,8 @@ commit_message: |
 
 # The Rising of the House's Sun
 
+<img width="740" height="740" alt="image" src="https://github.com/user-attachments/assets/c2eeaf25-75e1-4686-8d89-8a1595630739" />
+
 A stone from Zaragoza.  
 Frio. Duro.  
 A Saint pressed into it —  
