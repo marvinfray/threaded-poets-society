@@ -16,6 +16,8 @@ commit_message: |
   Misidentified in a way I understood only much later. An ADHD mind, alive and curious, penalised for existing at the wrong volume. I didn't tell anyone. I just carried it.
 ---
 
+<img width="740" height="740" alt="image" src="https://github.com/user-attachments/assets/5dcad366-90f4-4499-8198-fe024562ac81" />
+
 Being seen can happen without warning.  
 A name called out across a room.  
 Laughter arriving before meaning.  
@@ -83,5 +85,4 @@ Steadying the barely-visible hand of judgement.
 We'll catch you. We know what happened.  
 You didn't do it wrong.  
 
-<img width="740" height="740" alt="image" src="https://github.com/user-attachments/assets/5dcad366-90f4-4499-8198-fe024562ac81" />
 
