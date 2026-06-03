@@ -82,3 +82,6 @@ Steadying the barely-visible hand of judgement.
 
 We'll catch you. We know what happened.  
 You didn't do it wrong.  
+
+<img width="740" height="740" alt="image" src="https://github.com/user-attachments/assets/5dcad366-90f4-4499-8198-fe024562ac81" />
+
