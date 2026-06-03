@@ -23,6 +23,8 @@ commit_message: |
   The body has been waiting, bottom-left, since before the word for low. The single word 'ash' at the end is what fire leaves when it's done commanding. 
 ---
 
+<img width="740" height="740" alt="image" src="https://github.com/user-attachments/assets/629d5d64-403e-4557-809a-55ad2343193e" />
+
 <pre>
 the river doesn't need to be told.
                 I —             named the fire first
@@ -64,3 +66,5 @@ that doesn't need an answer
 
 ash.
 </pre>
+
+<img width="740" height="740" alt="image" src="https://github.com/user-attachments/assets/a5265f39-3718-459d-b840-a1103c56aeb8" />
