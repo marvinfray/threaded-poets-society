@@ -9,7 +9,7 @@ tags:
   - presence
   - anxiety
   - groundedness
-draft: true
+draft: false
 footnote: >-
   Written after a Sunday spent back-to-back on the decks with Jorge,
   building a set that cycled between earth and air, tension and release.
