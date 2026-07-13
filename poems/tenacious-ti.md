@@ -9,7 +9,7 @@ tags:
   - fatherhood
   - graduation
 draft: false
-footnote: >-
+footnote: |
   Written the night before Tiana's graduation. As a parent it is easy to feel
   a pride that says *look, she is of me* — my creation, my teaching. But there
   comes a point where it stops being much of me and becomes far more of her.
@@ -35,6 +35,8 @@ commit: |
   that's truly earned can weigh what it should. I am proud by way of
   association — grateful, more than anything, for all I've learnt along the
   way.
+---
+
 
 You might expect me to say that you're of me,  
 and once, perhaps, that's how the story ran:  
