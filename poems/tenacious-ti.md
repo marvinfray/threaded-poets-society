@@ -54,7 +54,7 @@ the way you'd meet the thing that stood before you,
 then shoulder it, and help another's load.  
 
 I watched ambition rise in you like weather,  
-not summoned, never forced — you'd simply say,  
+not summoned, never forced, you'd simply say,  
 "I want it," and then quietly begin  
 the patient work of making it that way.  
 
@@ -78,7 +78,7 @@ nor pride in gifts that fortune may bestow.
 It's pride by way of standing somewhere near,  
 allowed to watch the way you've come to grow.  
 
-You came through me; you were never mine to keep.
+You came through me. You were never mine to keep.
 And perhaps this is what loving you comes to mean:
 the less this story needs me on the page,
 the more I'm honoured simply to have seen.
