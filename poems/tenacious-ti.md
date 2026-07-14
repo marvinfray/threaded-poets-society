@@ -37,24 +37,23 @@ commit: |
   way.
 ---
 
-
 You might expect me to say that you're of me,  
 and once, perhaps, that's how the story ran:  
-that I would teach and you would learn from me.  
-But some-when, the pen changed hands.  
+that I would teach, and you would learn from me.  
+But some-when, unannounced, the pen changed hands.  
 
 People called you clever. Called you beautiful.  
-They still do, and they are not wrong there.  
+They say it still, and they are not wrong there.  
 But I hoped you'd hold such things more lightly,  
 for beauty lives in all things, if we care,  
 
 and cleverness is common as the rain.  
 What mattered more to me was what you chose:  
 the way you'd meet the thing that stood before you,  
-then shoulder it, and help another's load.  
+and keep on going, however hard it goes.  
 
 I watched ambition rise in you like weather,  
-not summoned, never forced, you'd simply say,  
+not summoned, never forced — you'd simply say,  
 "I want it," and then quietly begin  
 the patient work of making it that way.  
 
@@ -63,27 +62,32 @@ life owes us none of what we hope to hold.
 There will be days that answer hope with silence,  
 and seasons that arrive too hard, too cold.  
 
+And some things end. Not every road runs on.  
+There's courage, too, in choosing when to turn —  
+to set a thing down gently, call it done,  
+and carry forward only what you've learned.  
+
 When that day comes, remember who you are:  
 not what was given, praised, or seen in you,  
-but what you practiced when the road grew steep;  
-responsibility, kindness, seeing through.  
+but what you practised when the road grew steep —  
+the weight you took, the kindness, seeing through.  
 
 For strength is not in walking on unbroken,  
-certain, untouched by loss or pain.  
-Strength is in keeping hold of what you've learnt, and love,  
+unbending, certain, untouched by loss or pain.  
+Strength is in keeping hold of love and learning,  
 and choosing not to pass hurt on again.  
 
-So this is not the pride of making,  
+So this is not the pride of having made you,  
 nor pride in gifts that fortune may bestow.  
-It's pride by way of standing somewhere near,  
+It is the pride of standing somewhere near you,  
 allowed to watch the way you've come to grow.  
 
-You came through me. You were never mine to keep.
-And perhaps this is what loving you comes to mean:
-the less this story needs me on the page,
-the more I'm honoured simply to have seen.
+You came through me. You were never mine to keep.  
+Perhaps this is what loving you will mean:  
+the less this story needs me on the page,  
+the more I'm honoured simply to have seen.  
 
-And on your day, the truest thing I know to say:  
+So on your day, the truest thing I know:  
 be proud of what you've learned to choose and do.  
 Not praise. Not beauty. Not the easy things.  
-Be proud of who your choices made of you.
+Be proud of who your choices made of you.  
