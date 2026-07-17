@@ -35,9 +35,9 @@ and for the one you're making room for.
 I don't know what I'd do without you,  
 and I don't ever mean to learn.  
 Beside you, all my crooked wanting  
-comes out the way I meant it to.  
+has space to be seem the way I mean it to.
 
 So take this poem as evidence —  
 it only stands because you do.  
 You are the strength in all my sentences,  
-and the child I'm proudest of is carried by you.  
+and my reason's carried forth in you.  
