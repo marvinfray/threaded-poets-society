@@ -19,10 +19,10 @@ commit: |-
 I measured you in shadow once —  
 the arms that could lift any weight,  
 the hands that never burnt from heat,  
-the back that bore what backs are for.  
+the back that bore what mens backs are for.  
 
 You were the weather I grew up in.  
-Constant, certain, beyond all question.  
+Constant, overcast, beyond all question.  
 A boy assumes the sky is fixed.  
 A boy assumes his father's iron.  
 
