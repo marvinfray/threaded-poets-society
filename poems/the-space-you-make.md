@@ -18,14 +18,14 @@ a mother, rising to the word
 before the word has settled in.  
 
 I'll be honest, love: I'm frightened.  
-"Father" is a mountain's name,
-and some days, climbing towards the word,
+"Father" is a mountain's name,  
+and some days, climbing towards the word,  
 my back almost falls beneath it.
 
-But you make space for fear to speak
-without once letting it be king.
-You say "we've got this", like a fact.
-You say "you have this", like you've seen.
+But you make space for fear to speak  
+without once letting it be king.  
+You say "we've got this", like a fact.  
+You say "you have this", like you've seen.  
 
 And I am learning that my doubt  
 is only love that hasn't found its door:  
