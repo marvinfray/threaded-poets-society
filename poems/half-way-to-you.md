@@ -28,7 +28,7 @@ and underneath those same old songs
 another heartbeat asks for more.
 
 Your mother wore our eldest’s age
-when that green cover first appeared.
+when that hidden cover first appeared.
 She thought that she were grown back then—
 we're only younger than our fear.
 Now ivy climbs around the memories,
