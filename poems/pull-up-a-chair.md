@@ -31,11 +31,11 @@ I'm not here to tell you who you are.
 Only to wonder how you came to know.  
 
 Who handed you your name?  
-Who taught you where to stand?  
-Who pointed at the horizon and called it success?  
-Who told you what a man is?  
-What a woman is?  
-What it means to belong?  
+Who taught you:  
+where to stand,  
+what a man is,  
+what a woman is,  
+what it is to belong?  
 
 We inherit more than eye colour.  
 More than the shape of a nose or the curl of a smile.  
