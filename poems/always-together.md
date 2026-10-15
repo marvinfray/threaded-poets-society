@@ -23,7 +23,7 @@ commit: |-
   so the song comes home to the melody it started with.
 ---
 
-When the rain clouds gather grey,  
+[When the rain clouds gather grey](https://www.youtube.com/watch?v=jKOJ5OoeS_k),  
 When the wind blows hard all day,  
 When the sun comes shining through,  
 I'll be right there next to you.  
