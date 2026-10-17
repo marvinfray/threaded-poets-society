@@ -41,10 +41,10 @@ that's still answering.
 
 Beneath it, a dream catcher —  
 Lissy's hands this time,  
-though the habit is my mother's,  
+though the craft is my mother's,  
 who wove them for her grandchildren  
 the year our house came apart,  
-when our youngest woke in wet sheets  
+when our youngest woke    
 and all she could do was knot a net  
 for whatever frightened them in the dark.  
 Sometimes love is only that:  
