@@ -84,7 +84,7 @@ and the song is a bridge
 neither of us crosses alone.
 
 Soon there will be a baby in this house.  
-Summer is six months old across a sea.  
+Summer is six months old across the sea.  
 The lullabies are written.  
 The clock is wound.
 
