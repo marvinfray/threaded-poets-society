@@ -10,7 +10,7 @@ tags:
   - Lissy
   - Abi
   - family
-draft: true
+draft: false
 footnote: >-
   Written on the morning of two funerals, sitting among gifts and treasures that hold people I love.
 commit: |
